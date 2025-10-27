@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
 import {
   CheckCircle,
   ArrowRight,
@@ -38,7 +39,8 @@ export default function LandingPage() {
               Contact
             </Link>
           </nav>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
             <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
               Sign In
             </Link>
@@ -71,7 +73,7 @@ export default function LandingPage() {
                 </div>
               </div>
               <Image
-                src="/placeholder.svg?height=550&width=550"
+                src="/modern-saas-dashboard-interface-with-analytics-cha.jpg"
                 width={550}
                 height={550}
                 alt="Dashboard Preview"
@@ -194,7 +196,13 @@ export default function LandingPage() {
                     implementing it."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="rounded-full bg-muted h-10 w-10" />
+                    <Image
+                      src="/professional-headshot-woman-business.jpg"
+                      width={40}
+                      height={40}
+                      alt="Sarah Johnson"
+                      className="rounded-full"
+                    />
                     <div>
                       <p className="font-medium">Sarah Johnson</p>
                       <p className="text-sm text-muted-foreground">CTO, TechCorp</p>
@@ -228,7 +236,13 @@ export default function LandingPage() {
                     performance."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="rounded-full bg-muted h-10 w-10" />
+                    <Image
+                      src="/professional-headshot-asian-man-business.jpg"
+                      width={40}
+                      height={40}
+                      alt="Michael Chen"
+                      className="rounded-full"
+                    />
                     <div>
                       <p className="font-medium">Michael Chen</p>
                       <p className="text-sm text-muted-foreground">Product Manager, InnovateCo</p>
@@ -262,7 +276,13 @@ export default function LandingPage() {
                     and helpful."
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="rounded-full bg-muted h-10 w-10" />
+                    <Image
+                      src="/professional-headshot-woman-business-operations.jpg"
+                      width={40}
+                      height={40}
+                      alt="Emily Rodriguez"
+                      className="rounded-full"
+                    />
                     <div>
                       <p className="font-medium">Emily Rodriguez</p>
                       <p className="text-sm text-muted-foreground">Operations Director, GrowthLabs</p>
@@ -454,22 +474,22 @@ export default function LandingPage() {
               <h3 className="text-base font-medium">Product</h3>
               <ul className="grid gap-2">
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/product/features" className="text-sm text-muted-foreground hover:text-foreground">
                     Features
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/product/pricing" className="text-sm text-muted-foreground hover:text-foreground">
                     Pricing
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/product/integrations" className="text-sm text-muted-foreground hover:text-foreground">
                     Integrations
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/product/changelog" className="text-sm text-muted-foreground hover:text-foreground">
                     Changelog
                   </Link>
                 </li>
@@ -479,22 +499,22 @@ export default function LandingPage() {
               <h3 className="text-base font-medium">Company</h3>
               <ul className="grid gap-2">
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/company/about" className="text-sm text-muted-foreground hover:text-foreground">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/company/blog" className="text-sm text-muted-foreground hover:text-foreground">
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/company/careers" className="text-sm text-muted-foreground hover:text-foreground">
                     Careers
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/company/contact" className="text-sm text-muted-foreground hover:text-foreground">
                     Contact
                   </Link>
                 </li>
@@ -504,22 +524,22 @@ export default function LandingPage() {
               <h3 className="text-base font-medium">Legal</h3>
               <ul className="grid gap-2">
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/legal/terms" className="text-sm text-muted-foreground hover:text-foreground">
                     Terms
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/legal/privacy" className="text-sm text-muted-foreground hover:text-foreground">
                     Privacy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/legal/cookies" className="text-sm text-muted-foreground hover:text-foreground">
                     Cookies
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href="/legal/licenses" className="text-sm text-muted-foreground hover:text-foreground">
                     Licenses
                   </Link>
                 </li>
